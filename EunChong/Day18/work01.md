@@ -1,6 +1,6 @@
 # Node.js tutorial
-- Node.js는 자바스크립트를 활용하여 **서버를 만들 수 있는 개발 도구**이다. <br>
-- Promise는 비동기 적인 작업을 실시할 때 **이벤트가 성공**하면 fulfill을 발생시키고, **성공하지 못하면** reject를 발동 시키는 방식이다. 항상 reject를 구현할 필요가 없다.
+- ``Node.js``는 자바스크립트를 활용하여 **서버를 만들 수 있는 개발 도구**이다. <br>
+- ``Promise``는 비동기 적인 작업을 실시할 때 **이벤트가 성공**하면 fulfill을 발생시키고, **성공하지 못하면** reject를 발동 시키는 방식이다. 항상 reject를 구현할 필요가 없다.
 
 ![img_1.png](img_1.png)
 
@@ -128,3 +128,70 @@ console.log(data);
 지고 있는 함수를 말한다. 
 
 ![img.png](img.png)
+
+다음은 express를 활용하여 데이터를 받아본 것이다. 
+
+```js
+var http = require('http');
+var express = require('express');
+var app = express();
+
+app.set('port', process.env.PORT || 3000);
+
+app.use(function(req, res, next) {
+    console.log('request received');
+
+    res.send({name:'someName', age:25});
+});
+
+var server = http.createServer(app);
+server.listen(app.get('port'), function() {
+    console.log('web server opened ... http://localhost:%d', app.get('port'));
+});
+
+```
+
+
+뷰 엔진은 ejs를 통해 작동되며, 다음과 같은 방식을 통해 호출할 수 있다.
+```js
+const http = require('http');
+const express = require('express');
+const app = express();
+const path = require('path');
+const cors = require('cors');
+
+app.set('port', 3000);
+console.log(path.join(__dirname, ''));
+app.set('views', path.join(__dirname, "views"));
+app.set('view engine', 'ejs');
+app.use("/", express.static(path.join(__dirname,"public")));
+app.use(cors());
+
+app.get('/home', (req, res) => {
+    console.log("get home request");
+    const name = req.query.name;
+    const age = req.query.age;
+    req.app.render("home", {name, age}, (err, html) => {
+        //use only string values
+        res.end(html);
+    })
+})
+
+app.get('/home2', (req, res) => {
+    console.log("get home2 request");
+    //send object or formula
+    res.send(req.query);
+})
+
+const server = http.createServer(app);
+server.listen(app.get('port'), ()=>{
+    console.log(`서버 실행 중>>> http://localhost:${app.get('port')}`);
+});
+
+
+
+```
+
+http.createServer(app)에서 app이 인자로 들어간 이유로는 **express applicaion이 인자를 통해 전달되기 위함에 있다.** 만약 아무 인자 없이 받게 된다면 low-level HTTP 서버를 주게 된고, 인자로 전달하여 **express framework를 더 효과적으로 전달할 수 있으므로** 매우 중요한 작업이라고 볼 수 있다! 
+
+![img_2.png](img_2.png)
