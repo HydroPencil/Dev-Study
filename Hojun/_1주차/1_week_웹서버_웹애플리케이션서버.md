@@ -11,13 +11,13 @@
 - 예 톰켓 Jetty
 
 ## WAS,DB로 구성한 최소한의 웹 시스템
-![](../source/images/1_week/was_db시스템.PNG)
+![](../source/images/1_week/WS_WAS/was_db시스템.PNG)
 
 - WAS가 너무 많은 역할을 담당(정적 리소스 제공, 애플리케이션 로직) -> 서버 과부화 우려
 - WAS 장애시 오류 화면 노출 불가능
 
 ## WS,WAS,DB로 구성한 웹 시스템
-![](../source/images/1_week/ws_was_db시스템.PNG)
+![](../source/images/1_week/WS_WAS/ws_was_db시스템.PNG)
 
 - 정적 리소스는 WS가 제공, 애플리케이션 로직(동적인 처리)은 WAS가 처리 -> 과부화 부담 경감
 - 리소스 관리가 용이(정적 리소스 비중이 높을 시 WS증설, 애플리케이션 리소스 처리 비중이 높을 시 WAS증설)
@@ -26,16 +26,16 @@
 # 서블릿
 WAS를 직접 전부 구현할 경우
 
-![](../source/images/1_week/WAS를_직접_구현할_경우.PNG)
+![](../source/images/1_week/WS_WAS/WAS를_직접_구현할_경우.PNG)
 
 서블릿 적용
 
-![](../source/images/1_week/서블릿사용할경우.PNG)
+![](../source/images/1_week/WS_WAS/서블릿사용할경우.PNG)
 
 서블릿은 **개발자가 핵심 비즈니스 로직을 구현하는 데에 집중**할 수 있게 HTTP 스팩을 편리하게 사용할 수 있게 해 주는것.
 
 ## 동작과정
-![](../source/images/1_week/서블릿_동작과정.PNG)
+![](../source/images/1_week/WS_WAS/서블릿_동작과정.PNG)
 
 HTTP 요청이 들어올 시
 1. 서블릿 컨테이너가 새로운 Request, Response객체를 생성.
@@ -60,12 +60,12 @@ HTTP 요청이 들어올 시
 - 한번에 하나의 코드 라인만 수행 가능
 - 동시 처리가 필요한 경우 쓰레드를 추가로 생성 가능
 
-![](../source/images/1_week/쓰레드란.PNG)
+![](../source/images/1_week/WS_WAS/쓰레드란.PNG)
 사용자 요청을 WAS가 받으면 쓰레드가 servlet을 호출한다.
 동시에 여러 사용자가 요청을 보낼 경우 여러개의 쓰레드를 사용해야 하는데 이것을 멀티 쓰레드라고 한다.
 
 ## 사용자 요청 마다 쓰레드 생성
-![](../source/images/1_week/요청마다생성.PNG)
+![](../source/images/1_week/WS_WAS/요청마다생성.PNG)
 
 ### 장점
 - 동시 요청 처리 가능
@@ -79,7 +79,7 @@ HTTP 요청이 들어올 시
 - 과한 쓰레드 생성은 cpu, 메모리 임계점을 넘겨 서버를 죽일 수 있다.
 
 ## 쓰레드 풀을 이용한 요청 처리
-![](../source/images/1_week/쓰레드풀.PNG)
+![](../source/images/1_week/WS_WAS/쓰레드풀.PNG)
 쓰레드 풀이 쓰레드를 보관, 관리
 쓰레드 풀에 생성 가능한 쓰레드의 최대치를 관리, 톰캣은 최대 200개 기본 설정(변경 가능)
 
