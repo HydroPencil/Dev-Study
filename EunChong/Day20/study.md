@@ -154,7 +154,6 @@ MongoClient.connect('mongodb://localhost', { useUnifiedTopology: true }, functio
     }); 
 });
 */
-
 const http = require('http');
 const express = require('express');
 const app = express();
@@ -197,6 +196,5 @@ server.listen(app.get('port'), () => {
     console.log("서버 실행 중 ...");
     connectionDB();
 });
-
 ```
 
