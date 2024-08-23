@@ -76,7 +76,7 @@ grade : <input type="text" id="inpGrade">
 (client-side)
 
 ## Using Router to get html
-Router를 활용하여 html 데이터를 라우팅 할 수 있다. **단, 사용 시 app.use에 해당 라우터를 할당해야 한다!**
+Router를 활용하여 html 데이터를 라우팅 할 수 있다.{} 부분에 요소들을 삽입하면 ejs쪽으로 데이터를 넘길 수 있다. **단, 사용 시 app.use에 해당 라우터를 할당해야 한다!**
 ```js
 const router = express.Router();
 app.use('/', router);
