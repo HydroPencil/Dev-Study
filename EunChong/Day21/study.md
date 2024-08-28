@@ -195,6 +195,7 @@ intellij를 활용해서 spring boot 환경을 해보겠다면,
 ~~**이 망할 필자는 이거 찾는다고 5시간을 해맸다!**~~
 
 또한, Controller를 다음과 같이 application이 있는 폴더에서 처리해야 한다.
+
 ![img_2.png](img_2.png)
 
 
