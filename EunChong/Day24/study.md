@@ -1,10 +1,9 @@
-## 객체지향 소프트웨어 공학 예습 - UML
+# 객체지향 소프트웨어 공학 예습 - UML
 
 ## Use case Diagram
 고객, 개발자, 관리자, 사업가 등등 각각 이 프로젝트에 참여하게 되는 사람들이 사용하게 될 예정인 케이스들에 대해서 다이어그램을 그래보는 것이다.
 
-![img_1.png](img_1.png)
-(사용자와 웹 개발자의 일반적인 표시로는 사람 표시가 되어 있다. 사이트에서 지원되지 않으니 편의상 노란색 동그라미로 표기한다.)
+![img_4.png](img_4.png)
 
 ## Class Diagram
 각 클래스가 어떻게 상속되고 있는지 대략적인 코드를 작성하는 것이다.
@@ -21,6 +20,8 @@
 
 ![sm01.gif](sm01.gif)
 
+# Serverlet Study
+
 ## ServerLet & JSP
 
 Tomcat을 활용하여 serverLet 환경을 활용해 JSP가 작동되도록 실행해보자.
@@ -31,4 +32,9 @@ Tomcat을 활용하여 serverLet 환경을 활용해 JSP가 작동되도록 실�
 다음 코드에 대한 결과는 이곳에서 볼 수 있다. 
 
 ![img_2.png](img_2.png)
+
+``<%!`` 와 ``<%``를 통해서 java 코드를 jsp에서 작성할 수 있다.
+![img_3.png](img_3.png)
+
+# Spring Boot Study
 
