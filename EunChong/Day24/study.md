@@ -21,3 +21,14 @@
 
 ![sm01.gif](sm01.gif)
 
+## ServerLet & JSP
+
+Tomcat을 활용하여 serverLet 환경을 활용해 JSP가 작동되도록 실행해보자.
+
+사용하려는 프로젝트에서 new Serverlet을 사용하도록 하면 자동으로 serverlet을 위한 파일이 생성된다.
+
+![img.png](img.png)
+다음 코드에 대한 결과는 이곳에서 볼 수 있다. 
+
+![img_2.png](img_2.png)
+
