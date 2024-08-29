@@ -39,3 +39,7 @@ public class BoardController {
 ```
 
 **``@controller``를 지정해줘야 매핑이 작동되니 잊지 않도록 하자.**
+
+<hr>
+
+## 객체지향 소프트웨어 공학 예??습
