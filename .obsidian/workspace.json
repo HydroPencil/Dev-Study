@@ -1,0 +1,156 @@
+{
+  "main": {
+    "id": "c9d4ad929076aae8",
+    "type": "split",
+    "children": [
+      {
+        "id": "871732f4043e8361",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "542254cd5e522602",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LeeJi/week4/24-08-29 (day24) 당일 기록.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d44636ba75abc554",
+    "type": "split",
+    "children": [
+      {
+        "id": "fc799039f6cec59c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "71ec7377db590afc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ef68072672197742",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d4a6423658ea3e26",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "fd5cd64d541feee5",
+    "type": "split",
+    "children": [
+      {
+        "id": "30a684d53eed928a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ee894e248dbb51fb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "LeeJi/week4/24-08-29 (day24) 당일 기록.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0e012af59b33e4c8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "LeeJi/week4/24-08-29 (day24) 당일 기록.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "73b4be79b99ff636",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "d39cf83a769f33d2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "LeeJi/week4/24-08-29 (day24) 당일 기록.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "542254cd5e522602",
+  "lastOpenFiles": [
+    "LeeJi/week4/24-08-29 (day24) 당일 기록.md",
+    "LeeJi/week4",
+    "Hojun/Untitled.md",
+    "EunChong/Day20/study.md"
+  ]
+}
